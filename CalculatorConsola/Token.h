@@ -1,6 +1,6 @@
 #pragma once
 
-typedef enum TokenType
+enum TokenType
 {
 	UNDEFINIED,
 	WHITESPACE,
@@ -13,7 +13,7 @@ typedef enum TokenType
 	OPEN_PARANTHESIS,
 	CLOSE_PARANTHESIS,
 	END
-} TokenType;
+};
 
 typedef struct TokensData
 {
