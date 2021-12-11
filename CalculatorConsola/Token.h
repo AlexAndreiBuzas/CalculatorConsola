@@ -14,23 +14,3 @@ enum TokenType
 	CLOSE_PARANTHESIS,
 	END
 };
-
-typedef struct TokensData
-{
-	int maxSize;
-	int size;
-
-	TokenType* type;
-
-	char** textValue;
-	int* value;
-
-	int* hasValue;
-	int* positionInLine;
-} TokensData; typedef struct TokenData
-
-TokensData* createTokensData();
-
-void clearTokensData(TokensData* data);
-
-void addToken(TokensData* data, TokenType, char* textValue, int value, int hasValue, int positionInLine);
